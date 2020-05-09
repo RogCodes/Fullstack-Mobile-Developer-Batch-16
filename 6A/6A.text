@@ -1,0 +1,5 @@
+SELECT cashier.name cashier, product.name product, category.name category, price
+FROM cashier JOIN product
+ON cashier.id = product.id_cashier
+JOIN category
+ON category.id = product.id_category
