@@ -54,9 +54,11 @@ I'm using PHP, Start your XAMPP and run through your browser.
 - Number 6 B
 
 - Preview :
+![home](https://user-images.githubusercontent.com/59035856/75094061-12729a80-55ba-11ea-9c23-768a3090f5a8.PNG)
 
 ## Number 6
 
 - Number 6 C
 
 - Preview :
+![home](https://user-images.githubusercontent.com/59035856/75112898-334ef480-567b-11ea-8610-4a1a8b27a888.PNG)
