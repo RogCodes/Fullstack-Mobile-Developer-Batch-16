@@ -12,7 +12,7 @@ I'm using PHP, Start your XAMPP and run through your browser.
 ## Number 1
 
 - Number 1 (PHP)
-JSON (JavaScript Object Notation) adalah sebuah format yang digunakan untuk pertukaran data antar aplikasi. JSON dibuat berdasarkan format Object pada javascript. 
+- JSON (JavaScript Object Notation) adalah sebuah format yang digunakan untuk pertukaran data antar aplikasi. JSON dibuat berdasarkan format Object pada javascript. 
 
 - Buka code editor php online: https://glot.io/new/php
 
