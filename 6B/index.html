@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://kit.fontawesome.com/e1f7d251e6.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+        #button1 {
+            background-color: #fadc9c;
+            position: fixed;
+            left: 73%;
+            color: white;
+            size: 20px;
+        }
+    </style>
+
+</head>
+
+<?php
+if (isset($_GET['id'])) {
+    echo "<body onload='Alert()'>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient-secondary" id="mainNav">
+    <div class="container">
+        <img src="logo.png" alt="Logo" href="page-top" width="100" height="50" style="margin-left: 10%;">
+        <div style="position: fixed; left: 30%;">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 bg-secondary text-white" type="search" Value="Search..."
+                    style="width: 500px;">
+            </form>
+        </div>
+        <a class="btn btn-lg" href="#" role="button" id="button1" data-toggle="modal" data-target="#AddModal">ADD</a>
+</nav>
+
+</div>
+</nav>
+
+<div
+    style="position: fixed; left: 23%; top: 23%; width: 50%; border-style: solid; border-width: 1px; text-align: center;">
+    <table class="table table-borderless">
+        <thead style="color: white; background-color: #fadc9c;">
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Cashier</th>
+                <th scope="col">Product</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Pevita Pearce</td>
+                <td>Latte</td>
+                <td>Drink</td>
+                <td>Rp 10.000</td>
+                <td><i class="far fa-edit fa-2x" style="color: lightgreen"></i> <a href="index.php?id=1"><span><i
+                                class="far fa-trash-alt fa-2x" style="color: lightcoral"></i></span></a></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Raisa Andriana</td>
+                <td>Cake</td>
+                <td>Food</td>
+                <td>Rp 20.000</td>
+                <td><i class="far fa-edit fa-2x" style="color: lightgreen"></i>
+                    <a href="index.php"><span><i class="far fa-trash-alt fa-2x"
+                                style="color: lightcoral"></i></span></a></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Raisa Andriana</td>
+                <td>Fried Rice</td>
+                <td>Food</td>
+                <td>Rp 30.000</td>
+                <td><i class="far fa-edit fa-2x" style="color: lightgreen"></i>
+                    <a href="index.php"><span><i class="far fa-trash-alt fa-2x"
+                                style="color: lightcoral"></i></span></a></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Pevita Pearce</td>
+                <td>Gudeg</td>
+                <td>Food</td>
+                <td>Rp 35.000</td>
+                <td><i class="far fa-edit fa-2x" style="color: lightgreen"></i>
+                    <a href="index.php"><span><i class="far fa-trash-alt fa-2x" style="color: lightcoral"></i></span></a></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Joko Purwadhi</td>
+                <td>Ice Tea</td>
+                <td>Drink</td>
+                <td>Rp 55.000</td>
+                <td><i class="far fa-edit fa-2x" style="color: lightgreen"></i>
+                    <a href="index.php"><span><i class="far fa-trash-alt fa-2x" style="color: lightcoral"></i></span></a></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Randi Maulana Akbar</td>
+                <td>Bakso</td>
+                <td>Food</td>
+                <td>Rp 15.000</td>
+                <td><i class="far fa-edit fa-2x" style="color: lightgreen"></i>
+                    <a href="index.php"><span><i class="far fa-trash-alt fa-2x" style="color: lightcoral"></i></span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="AddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="index.php" method="post">
+                    <table width="100%" border="0">
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <select name="cashier" class="form-control">
+                                        <option value="1">Pevita Pearce</option>
+                                        <option value="2">Raisa Andriana</option>
+                                        <option value="3">Randi Maulana Akbar</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <select name="category" class="form-control">
+                                        <option value="1">Food</option>
+                                        <option value="2">Drink</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" name="product" placeholder="product" class="form-control">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" name="price" placeholder="price" class="form-control">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" name="submit" class="btn btn-lg" value="Add"
+                    style="background-color: #fadc9c; color: white;">
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script>
+    function Alert() {
+        Swal.fire(
+            'Data Pevita Pearce',
+            'Berhasil Dihapus',
+            'success'
+        )
+    }
+</script>
+</body>
+
+</html>
