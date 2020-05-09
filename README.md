@@ -1,7 +1,7 @@
 # Fullstack-Mobile-Developer-Batch-16
 
 # Bismillah
-This is Repository for Arkademy Bootcamp Batch 15 
+This is Repository for Arkademy Bootcamp Batch 16 
 
 Tools : 
 Ms. Visual Code
