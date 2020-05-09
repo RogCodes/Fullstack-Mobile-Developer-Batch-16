@@ -46,6 +46,8 @@ I'm using PHP, Start your XAMPP and run through your browser.
 - Number 6 A
 
 - Preview :
+![6a](https://user-images.githubusercontent.com/59035856/81468354-2f0d8e80-9209-11ea-884b-6187ab4a7aa5.PNG)
+
 
 ## Number 6
 
