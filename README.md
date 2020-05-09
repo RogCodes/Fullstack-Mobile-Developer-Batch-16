@@ -40,3 +40,21 @@ I'm using PHP, Start your XAMPP and run through your browser.
 - Number 5 (PHP)
 
 - Buka code editor php online: https://glot.io/new/php
+
+## Number 6
+
+- Number 6 A
+
+- Preview :
+
+## Number 6
+
+- Number 6 B
+
+- Preview :
+
+## Number 6
+
+- Number 6 C
+
+- Preview :
